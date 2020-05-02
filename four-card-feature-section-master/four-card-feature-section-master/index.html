@@ -34,7 +34,17 @@
 	}
 	
 	#cards {
+	padding:50px 0px 50px 0px;
 	display:grid;
+	width:100%;
+	grid-template-columns: 40px 2fr 2fr 2fr 40px;
+	grid-template-rows:120px 120px 120px 120px;
+	grid-gap:20px;
+	grid-template-areas:
+  ". . red . ."
+  ". green red yellow ."
+  ".green blue yellow ."
+  ". . blue . .";
 	}
 	
 	.card{
@@ -42,26 +52,41 @@
 		-webkit-box-shadow: 5px 20px 18px -11px #d9e3f1;
 		-moz-box-shadow: 5px 20px 18px -11px #d9e3f1;
 		box-shadow: 5px 20px 18px -11px #d9e3f1;
+		padding:20px;
+		text-align:left;
+		border-radius:3%;
 	}
 		
 	#green{
 		border-top: 3px solid #46d2d2;
+		grid-area:green;
 			
+		
 	}
 		
 	#red{
 		border-top: 3px solid #eb5454;
+		grid-area:red;
 	}
 	
 	#yellow{
 		border-top: 3px solid #fcae4a;
+		grid-area:yellow;
 	}
 	#blue{
 		border-top: 3px solid #549df0;
+		grid-area:blue;
 	}
 	
 	p{
 		color:#bcbbc0;
+	}
+	
+	img{
+	
+	float:right;
+	
+	
 	}
 
     .attribution { font-size: 11px; text-align: center; }
@@ -106,7 +131,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Lena Kroeker</a>.
     </p>
   </footer>
 </body>
