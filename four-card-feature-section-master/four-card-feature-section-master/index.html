@@ -3,37 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+  
+	body {
+		background-color:#fafafa;
+		font-family: 'Poppins', sans-serif;
+		text-align:center;
+		color:#535564;
+	}
+	
+	#top {
+		font-weight:200;
+		padding-top:60px;
+		border-bottom:0px;
+	}
+	h1{
+		line-height:1em;
+		margin:0.5em;
+	}
+	
+	#subhead {
+		line-height:1.5em;
+		margin: 0 30% 0 30%;
+	}
+	
+	#cards {
+	display:grid;
+	}
+	
+	.card{
+		background-color:#ffffff;
+		-webkit-box-shadow: 5px 20px 18px -11px #d9e3f1;
+		-moz-box-shadow: 5px 20px 18px -11px #d9e3f1;
+		box-shadow: 5px 20px 18px -11px #d9e3f1;
+	}
+		
+	#green{
+		border-top: 3px solid #46d2d2;
+			
+	}
+		
+	#red{
+		border-top: 3px solid #eb5454;
+	}
+	
+	#yellow{
+		border-top: 3px solid #fcae4a;
+	}
+	#blue{
+		border-top: 3px solid #549df0;
+	}
+	
+	p{
+		color:#bcbbc0;
+	}
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
   
-  Reliable, efficient delivery
-  Powered by Technology
+  <h1 id="top">Reliable, efficient delivery</h1>
+  <h1>Powered by Technology</h1>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  <p id="subhead">Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful</p>
+  
+  <div id="cards">
+  
+	<div id="green" class="card">
+		  <h2>Supervisor</h2>
+			<p id="info">Monitors activity to identify project roadblocks</p>
+		  <img src="file:///C:/Users/lenak/Desktop/four-card-feature-section-master/four-card-feature-section-master/images/icon-supervisor.svg">
+	  </div>
+	  
+	<div id="red" class="card">
+		  <h2 >Team Builder</h2>
+			<p id="info">Scans our talent network to create the optimal team for your project</p>
+		  <img src="file:///C:/Users/lenak/Desktop/four-card-feature-section-master/four-card-feature-section-master/images/icon-team-builder.svg">
+	</div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+	<div id="yellow" class="card">
+		  <h2 >Karma</h2>
+		  <p id="info">Regularly evaluates our talent to ensure quality</p>
+		  <img src="file:///C:/Users/lenak/Desktop/four-card-feature-section-master/four-card-feature-section-master/images/icon-karma.svg">
+	 </div>
+	  
+	<div id="blue" class="card">
+		  <h2>Calculator</h2>
+		  <p id="info">Uses data from past projects to provide better delivery estimates</p>
+		  <img src="file:///C:/Users/lenak/Desktop/four-card-feature-section-master/four-card-feature-section-master/images/icon-calculator.svg">
+	</div>
+</div>
   
   <footer>
     <p class="attribution">
